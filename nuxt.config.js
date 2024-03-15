@@ -15,7 +15,12 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'stylesheet',
+        href: 'https://site-assets.fontawesome.com/releases/v6.4.1/css/all.css',
+        type: 'text/css'
+      },
     ]
   },
 
@@ -25,7 +30,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-  ],
+  ], 
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
