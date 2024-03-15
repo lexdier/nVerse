@@ -5,5 +5,11 @@ import TheHeader from '../components/TheHeader.vue';
 </script>
 
 <template>
-  
+  <div>
+    <TheHeader/>
+
+      <Nuxt/> 
+
+    <TheFooter/>
+  </div>
 </template>
