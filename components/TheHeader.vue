@@ -30,7 +30,7 @@
             toggle-class="text-decoration-none"
             variant="link">
             <template #button-content>
-              <BAvatar class="avatar-img avatar-lg rounded-circle" size="40px"/>
+              <BAvatar class="avatar-img avatar-lg rounded-circle" size="40px" style="background-color: #0d1b6b;"/>
             </template>
           
             <BDropdownItem>
