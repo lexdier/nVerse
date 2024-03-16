@@ -62,9 +62,9 @@ const menus = [
             <br>
             CEP: 86720-000
             <br>
-            Super Copo Acrílico
+            Nverse
             <br>
-            CNPJ: 20.661.615/001-76
+            CNPJ: 30.651.615/001-76
           </p>
 
           <div class="d-flex">
