@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import BlogSection from '~/components/BlogSection.vue';
 import CarouselSection from '~/components/CarouselSection.vue';
 import SectionContact from '~/components/SectionContact.vue';
 import SectionPricing from '~/components/SectionPricing.vue';
@@ -13,6 +14,8 @@ import SectionPricing from '~/components/SectionPricing.vue';
       <SectionPricing/>
 
       <CarouselSection/>
+
+      <BlogSection/>
     </BContainer>
   </main>
 </template>
