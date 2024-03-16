@@ -7,28 +7,49 @@ import { BButton, BCardBody } from 'bootstrap-vue';
 <template>
     <BRow class="py-5">
       <BCol cols="6" class="d-flex flex-column justify-content-between">
-        <BCard no-body class="rounded-pill h-100 my-2 gradient text-white contenedor">
-          <BCardBody class="d-flex align-items-center">
+        <BCard no-body class="rounded-pill h-100 my-2 gradient text-white cont">
+          <BCardBody class="d-flex align-items-center w-100">
               <span class="text-uppercase font-weight-bolder h5">Services</span>
-              <div class="previsualizacion">
-              <p>Preview</p>
-            </div>
+              <div class="preview">
+                <BCard no-body class="rounded-pill h-100 my-2 gradient text-white w-100">
+                  <BCardBody>
+                    <div class="text-center text-uppercase font-weight-bolder">
+                      <span>Services and pricing</span>
+                    </div>
+                  
+                    <div class="d-flex justify-content-around">
+                      <div>
+                        <span class="font-weight-bolder">559</span>
+                        <span>$/pack</span>
+                      </div>
+                      <div>
+                        <span class="font-weight-bolder">699</span>    
+                        <span>$/pack</span>
+                      </div>
+                      <div>
+                        <span class="font-weight-bolder">899</span>
+                        <span>$/pack</span>
+                      </div>
+                    </div>
+                  </BCardBody>
+                </BCard>
+              </div>
           </BCardBody>
         </BCard>
 
-        <BCard no-body class="rounded-pill h-100 d-flex my-2 w-25 gradient text-white contenedor">
+        <BCard no-body class="rounded-pill h-100 d-flex my-2 w-25 gradient text-white cont">
           <BCardBody class="d-flex align-items-center">
             <span class="text-uppercase font-weight-bolder h5">Blog</span>
-            <div class="previsualizacion">
+            <div class="preview">
               <p>Preview</p>
             </div>
           </BCardBody>
         </BCard>
 
-        <BCard no-body class="rounded-pill h-100 my-2 w-50 gradient text-white contenedor">
+        <BCard no-body class="rounded-pill h-100 my-2 w-50 gradient text-white cont">
           <BCardBody class="d-flex align-items-center">
             <span class="text-uppercase font-weight-bolder h5">Projects</span>
-            <div class="previsualizacion">
+            <div class="preview">
               <p>Preview</p>
             </div>
           </BCardBody>
@@ -90,20 +111,15 @@ import { BButton, BCardBody } from 'bootstrap-vue';
     background: -webkit-linear-gradient(left, #1d40da, #0d1b6b); 
     background: linear-gradient(to right, #1d40da, #0d1b6b); 
 }
-.contenedor {
+.cont {
     position: relative;
-    width: 200px; /* Ancho de ejemplo */
-    height: 200px; /* Altura de ejemplo */
+    width: 200px;
+    height: 200px;
     overflow: hidden;
     transition: 0.3s ease;
 }
 
-.imagen {
-    width: 100%;
-    height: 100%;
-    transition: transform 0.3s ease;
-}
-.previsualizacion {
+.preview {
     position: absolute;
     top: 0;
     left: 0;
@@ -118,11 +134,12 @@ import { BButton, BCardBody } from 'bootstrap-vue';
     align-items: center;
 }
 
-.contenedor:hover {
+.cont:hover {
   transform: scale(1.2);
+  width: 90%;
 }
 
-.contenedor:hover .previsualizacion {
+.cont:hover .preview {
     opacity: 1;
 }
 </style>
