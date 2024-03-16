@@ -56,7 +56,7 @@ const cards = [
     </BCol>
       <template v-for="card in cards">
         <BCol>
-          <BCard class="shadow-lg">
+          <BCard class="shadow-lg gradient text-white" style="border-radius: 2em;">
             <BCardTitle class="text-center">
               <span>$</span>
               <span v-text="card.price" class="font-weight-bold"/>
@@ -65,7 +65,7 @@ const cards = [
             <BCardBody>
              <BListGroup tag="ul">
               <template v-for="(item, index) in card.items">
-                <BListGroupItem :class="`text-${item} p-2`" class="border-0 fs-xs" tag="li">
+                <BListGroupItem :class="`text-${item} p-2`" class="border-0 fs-xs gradient" tag="li">
                   <FontAwesome name="check"/>
                   <span v-text="item"/>
                 </BListGroupItem>
@@ -77,3 +77,10 @@ const cards = [
     </template>
   </BROw>
 </template>
+
+<style> 
+.gradient{
+    background: -webkit-linear-gradient(left, #1d40da, #0d1b6b) !important; 
+    background: linear-gradient(to right, #1d40da, #0d1b6b) !important; 
+}
+</style>
