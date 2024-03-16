@@ -2,7 +2,6 @@
 import BlogSection from '~/components/BlogSection.vue';
 import CarouselSection from '~/components/CarouselSection.vue';
 import PresentationSection from '~/components/PresentationSection.vue';
-import ContactSection from '~/components/ContactSection.vue';
 import PricingSection from '~/components/PricingSection.vue';
 import ServicesSection from '~/components/ServicesSection.vue';
 
@@ -14,8 +13,6 @@ import ServicesSection from '~/components/ServicesSection.vue';
       <PresentationSection/>
 
       <ServicesSection/>
-
-      <ContactSection/>
 
       <PricingSection/>
 
