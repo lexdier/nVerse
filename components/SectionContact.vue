@@ -64,7 +64,7 @@ import { BButton, BCardBody } from 'bootstrap-vue';
               <span class="h4">Did you want call you back?</span>
               <div class="input-group input-group-merge mt-3">
                 <input
-                  type="text"
+                  type="number"
                   class="form-control bg-light-green border-light-green w-250px"
                   placeholder="let your phone number"
                   aria-label="Search for any term"
