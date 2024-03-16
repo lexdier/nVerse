@@ -7,7 +7,7 @@ import { BButton, BCardBody } from 'bootstrap-vue';
 <template>
     <BRow class="py-5">
       <BCol cols="6" class="d-flex flex-column justify-content-between">
-        <BCard no-body class="rounded-pill h-100 my-2">
+        <BCard no-body class="rounded-pill h-100 my-2 gradient text-white">
           <BCardBody>
             <div class="text-center text-uppercase font-weight-bolder">
               <span>Services and pricing</span>
@@ -30,13 +30,13 @@ import { BButton, BCardBody } from 'bootstrap-vue';
           </BCardBody>
         </BCard>
 
-        <BCard no-body class="rounded-pill h-100 d-flex my-2 w-25">
+        <BCard no-body class="rounded-pill h-100 d-flex my-2 w-25 gradient text-white">
           <BCardBody class="d-flex align-items-center">
             <span class="text-uppercase font-weight-bolder h5">Blog</span>
           </BCardBody>
         </BCard>
 
-        <BCard no-body class="rounded-pill h-100 my-2 w-50">
+        <BCard no-body class="rounded-pill h-100 my-2 w-50 gradient text-white">
           <BCardBody class="d-flex align-items-center">
             <span class="text-uppercase font-weight-bolder h5">Projects</span>
           </BCardBody>
@@ -92,3 +92,9 @@ import { BButton, BCardBody } from 'bootstrap-vue';
       </BCol>
     </BRow>
 </template>
+
+<style>
+.gradient{
+    background: -webkit-linear-gradient(left, #1d40da, #0d1b6b); 
+    background: linear-gradient(to right, #1d40da, #0d1b6b); 
+}</style>
