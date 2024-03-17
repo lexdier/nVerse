@@ -11,6 +11,7 @@ import img4 from 'assets/img-4.jpg';
 </script>
 
 <template>
+  <BContainer>
     <BRow class="py-5">
         <BCol cols="4" class="d-flex align-items-center">
             <span class="text-uppercase font-weight-bolder h2">
@@ -74,4 +75,5 @@ import img4 from 'assets/img-4.jpg';
             </BCarousel>
         </BCol>
     </BRow>
+  </BContainer>
 </template>
