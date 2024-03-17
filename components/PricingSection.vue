@@ -50,37 +50,75 @@ const cards = [
 </script>
 
 <template>
-  <BRow style="gap: 1em;">
-    <BCol cols="12" class="text-center">
-      <h1>Services and pricing</h1>
-    </BCol>
-      <template v-for="card in cards">
-        <BCol>
-          <BCard class="shadow-lg gradient text-white" style="border-radius: 2em;">
-            <BCardTitle class="text-center">
-              <span>$</span>
-              <span v-text="card.price" class="font-weight-bold"/>
-              <span class="text-muted">/pack</span>
-            </BCardTitle>
-            <BCardBody>
-             <BListGroup tag="ul">
-              <template v-for="(item, index) in card.items">
-                <BListGroupItem :class="`text-${item} p-2`" class="border-0 fs-xs gradient" tag="li">
-                  <FontAwesome name="check"/>
-                  <span v-text="item"/>
-                </BListGroupItem>
-               </template>
-              </BListGroup>
-            </BCardBody>
-          </BCard>
-        </BCol>
-    </template>
-  </BROw>
+  <BContainer class="py-5" style="position: relative;">
+    <BRow style="gap: 1em;">
+      <BCol cols="12" class="text-center">
+        <h1>Services and pricing</h1>
+      </BCol>
+        <template v-for="card in cards">
+          <BCol>
+            <BCard class="shadow-lg gradient text-white" style="border-radius: 2em;">
+              <BCardTitle class="text-center">
+                <span>$</span>
+                <span v-text="card.price" class="font-weight-bold"/>
+                <span class="text-muted">/pack</span>
+              </BCardTitle>
+              <BCardBody>
+               <BListGroup tag="ul">
+                <template v-for="(item, index) in card.items">
+                  <BListGroupItem :class="`text-${item} p-2`" class="border-0 fs-xs gradient" tag="li">
+                    <FontAwesome name="check"/>
+                    <span v-text="item"/>
+                  </BListGroupItem>
+                 </template>
+                </BListGroup>
+              </BCardBody>
+            </BCard>
+          </BCol>
+      </template>
+    </BRow>
+    <BLink to="#" class="gradient link" style="
+            position: absolute;
+            height: 10em;
+            width: 24em;
+            cursor: pointer;
+            top: 0px;
+            right: -50%;
+            border-radius: 40px 0 0 40px;
+            "/>
+    <BLink to="#" class="gradient" style="
+            position: absolute;
+            height: 5em;
+            width: 25em;
+            cursor: pointer;
+            top: 0px;
+            left: -50%;
+            border-radius: 0 40px 40px 0;
+            "/>
+    <BLink to="#" class="gradient" style="
+            position: absolute;
+            width: 20em;
+            height: 10em;
+            cursor: pointer;
+            bottom: 0px;
+            left: -50%;
+            border-radius: 0 40px 40px 0;
+              "/>
+    <BLink to="#" class="gradient" style="    
+            position: absolute;
+            width: 24em;
+            height: 5em;
+            cursor: pointer;
+            right: -50%;
+            bottom: 0px;
+            border-radius: 40px 0 0 40px;
+            "/>
+  </BContainer>
 </template>
 
 <style> 
 .gradient{
-    background: -webkit-linear-gradient(left, #1d40da, #0d1b6b) !important; 
-    background: linear-gradient(to right, #1d40da, #0d1b6b) !important; 
+    background: -webkit-linear-gradient(left, #1d40da, #071042) !important; 
+    background: linear-gradient(to right, #1d40da, #071042) !important; 
 }
 </style>
