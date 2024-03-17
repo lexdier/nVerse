@@ -51,13 +51,13 @@ const cards = [
 
 <template>
   <BContainer class="py-5" style="position: relative;">
-    <BRow style="gap: 1em;">
-      <BCol cols="12" class="text-center">
+    <BRow>
+      <BCol lg="12" class="text-center">
         <h1>Services and pricing</h1>
       </BCol>
         <template v-for="card in cards">
-          <BCol>
-            <BCard class="shadow-lg gradient text-white" style="border-radius: 2em;">
+          <BCol lg="4" md="12">
+            <BCard class="shadow-lg gradient text-white text-md-center" style="border-radius: 2em;">
               <BCardTitle class="text-center">
                 <span>$</span>
                 <span v-text="card.price" class="font-weight-bold"/>

@@ -13,12 +13,12 @@ import img4 from 'assets/img-4.jpg';
 <template>
   <BContainer>
     <BRow class="py-5">
-        <BCol cols="4" class="d-flex align-items-center">
+        <BCol lg="4" md="12" class="d-flex align-items-center">
             <span class="text-uppercase font-weight-bolder h2">
                 nVerse was <br> born from <br> the need <br> to turn <br> digital noise <br> into clear <br> messages
             </span>
         </BCol>
-        <BCol cols="8">
+        <BCol lg="8" md=12>
             <BCarousel
               :interval="4000"
               controls

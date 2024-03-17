@@ -46,13 +46,13 @@ const menus = [
   <footer class="footer mt-5 py-3 border border-top-3">
     <BContainer>
       <BRow>
-        <BCol cols="12">
+        <BCol lg="12">
           <BNavbarBrand class="py-0 mb-3 mb-md-4">
            <span>NVerse</span>
           </BNavbarBrand>
         </BCol>
 
-        <BCol md="4" lg="3" class="pb-2 pb-md-0 mb-4 mb-md-0">
+        <BCol md="6" lg="3" class="pb-2 pb-md-0 mb-4 mb-md-0">
           <p class="fs-sm">
             "As good minimalists, we have reduced this page to nothing. Another try?”
           </p>
@@ -76,8 +76,8 @@ const menus = [
           </div>
         </BCol>
 
-        <BCol lg="7" md="8" offset-lg="2" offset-xl="3" xl="6">
-          <BRow cols="1" cols-sm="3">
+        <BCol lg="7" md="6" offset-lg="2" offset-xl="3" xl="6">
+          <BRow lg="4" cols-sm="3">
             <template v-for="(menu, key) in menus">
                 <BCol class="mb-4 mb-md-0">
                     <h4 class="h6 fw-bold pb-lg-1">
