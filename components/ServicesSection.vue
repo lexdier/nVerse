@@ -1,10 +1,9 @@
 <script lang="ts" setup>
-import { BButton, BCardBody } from 'bootstrap-vue';
-
 
 </script>
 
 <template>
+  <BContainer>
     <BRow class="py-5">
       <BCol cols="6" class="d-flex flex-column justify-content-between">
         <BCard no-body class="rounded-pill h-100 my-2 gradient text-white cont">
@@ -104,12 +103,13 @@ import { BButton, BCardBody } from 'bootstrap-vue';
         </BRow>
       </BCol>
     </BRow>
+  </BContainer>
 </template>
 
 <style>
 .gradient{
-    background: -webkit-linear-gradient(left, #1d40da, #0d1b6b); 
-    background: linear-gradient(to right, #1d40da, #0d1b6b); 
+    background: -webkit-linear-gradient(left, #1d40da, #071042); 
+    background: linear-gradient(to right, #1d40da, #071042); 
 }
 .cont {
     position: relative;
