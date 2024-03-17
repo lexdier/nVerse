@@ -8,17 +8,15 @@ import ServicesSection from '~/components/ServicesSection.vue';
 </script>
 
 <template>
-  <main>
-    <BContainer>
-      <PresentationSection/>
+  <main style="overflow: hidden;">
+    <PresentationSection/>
 
-      <ServicesSection/>
+    <ServicesSection/>
 
-      <PricingSection/>
+    <PricingSection/>
 
-      <CarouselSection/>
+    <CarouselSection/>
 
-      <BlogSection/>
-    </BContainer>
+    <BlogSection/>
   </main>
 </template>
