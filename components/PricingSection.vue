@@ -66,7 +66,7 @@ const cards = [
               <BCardBody>
                <BListGroup tag="ul">
                 <template v-for="(item, index) in card.items">
-                  <BListGroupItem :class="`text-${item} p-2`" class="border-0 fs-xs gradient" tag="li">
+                  <BListGroupItem :class="`text-${item} p-2`" class="border-0 fs-xs bg-transparent" tag="li">
                     <FontAwesome name="check"/>
                     <span v-text="item"/>
                   </BListGroupItem>
